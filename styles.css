@@ -1,0 +1,134 @@
+@import url(https://fonts.google.com/specimen/Overpass);
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass',sans-serif;
+    font-size: 0.85rem;
+}
+
+.wrapper{
+    width: 350px;
+    height: 330px;
+    background-color:  hsl(213, 19%, 18%);
+    border-radius: 1.2em; 
+}
+
+.rating-container{
+    padding:2em;
+}
+
+.rating-container .hidden{
+    display: none;
+}
+
+.rating-container img{
+    padding:0.9em;
+    border-radius: 50%;
+    background-color:  hsl(216, 11%, 27%);
+}
+
+.rating-container h1{
+    color:white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin:1.3em 0em 0.6em 0em;
+}
+
+.rating-container p{
+    color:hsl(216, 12%, 54%);
+    margin-bottom:1.3em;
+}
+
+.rating-container .btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-container .btn-container input[type="radio"]{
+    display: none;
+}
+
+.rating-container .btn-container label {
+    padding: 0.99em 1.3em;
+    font-size: 0.85rem;
+    border: none;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(216, 11%, 27%);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.rating-container .btn-container input[type="radio"]:hover{
+    background-color: hsl(217, 12%, 63%);
+    color:white;
+}
+
+.rating-container .btn-container input[type="radio"]:checked + label{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.rating-container #btn-submit{
+    padding: 0.65em;
+    border: none;
+    margin:2em 0em;
+    width: 100%;
+    border-radius: 1.2em;
+    text-transform: uppercase;
+    background-color: hsl(25, 97%, 53%);
+    color:white;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.rating-container #btn-submit:hover{
+    background-color: white;
+    color:hsl(25, 97%, 53%);
+}
+
+
+.thankyou-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thankyou-container img{
+    margin: 2em 0em;
+}
+
+.thankyou-container h3{
+    color:hsl(25, 97%, 53%);
+    font-weight: 400;
+    padding:0.4em 0.65em;
+    border-radius: 2em;
+    background-color:  hsl(215, 16%, 27%);
+}
+
+.thankyou-container h1{
+    color: white;
+    font-weight: 400;
+    margin:0.75em 0em;
+}
+
+
+.thankyou-container p{
+    color:hsl(216, 12%, 54%);
+    width: 75%;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
